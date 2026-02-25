@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools >= 61.0", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "BLOCKING"
+version = "1.0.0"
+authors = [
+  { name="Francesco Pesce", email="francesco.pesce@bio.ku.dk" },
+]
+description = "Tools for assessing convergence of Molecular Dynamics simulations by error analysis of calculated ensemble averages and free energies."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: POSIX :: Linux",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics"
+]
+dependencies = [
+    'numpy',
+    'scipy'
+]
