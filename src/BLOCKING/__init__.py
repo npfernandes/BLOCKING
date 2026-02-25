@@ -1,3 +1,3 @@
-from main import BlockAnalysis
+from BLOCKING.main import BlockAnalysis
 
 __all__ = ['BlockAnalysis']
