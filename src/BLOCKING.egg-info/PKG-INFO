@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: BLOCKING
+Version: 1.0.0
+Summary: Tools for assessing convergence of Molecular Dynamics simulations by error analysis of calculated ensemble averages and free energies.
+Author-email: Francesco Pesce <francesco.pesce@bio.ku.dk>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: scipy
+Dynamic: license-file
+
+# BLOCKING
+Tools for assessing convergence of Molecular Dynamics simulations by error analysis of calculated ensemble averages and free energies
+
+- Reblocking of mono-dimensional serially correlated unbiased data series (e.g. Collective variables)
+[https://doi.org/10.1063/1.457480]
+
+- Reblocking approach for mono-dimensional biased CVs (WTMetaD with 1 CV or PBMetaD)
+[https://doi.org/10.1007/978-1-4939-9608-7_21]
+
+- Automatic selection of correlation length and standard error of the mean
+
+- Tools for analyses
+
+##### *Requirements:
+NumPY [https://numpy.org]
+SciPy [https://scipy.org]
+
+
+###  If you find bugs or if you want to contribute please contact francesco.pesce@bio.ku.dk

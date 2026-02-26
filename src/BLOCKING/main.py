@@ -1,6 +1,6 @@
 import numpy as np
 from scipy.optimize import minimize
-from block_tools import *
+from BLOCKING.block_tools import *
 from scipy.stats import gaussian_kde
 from scipy.stats import norm
 
@@ -29,9 +29,10 @@ class BlockAnalysis:
             self.w = np.full(len(self.x), 1)
         else:
             self.kbT = 0.008314463*T
+            self.w = check(self.w, self.multi)
             self.w /= self.w.sum()
             self.stat = fblocking(self.x, self.w, self.kbT, self.multi, self.interval)
-
+            self.av = np.average(self.x, weights=self.w)
         self.stat[...,0] /= dt
 
     def SEM(self):
